@@ -1,12 +1,11 @@
 .topo{
-	background-image: url("../img/AdobeStock_221016184.jpeg");
+	background-image: url("../img/Banner-Calculadora-.png");
 	background-size:cover;
 	background-position:center top;
 	background-repeat:no-repeat;
 	background-color: #000;
 	padding: 50px;
 	font-family: "Montserrat", sans-serif;
-	filter: brightness(70%);
 }
 
 .letra_branca{
