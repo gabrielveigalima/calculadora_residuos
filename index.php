@@ -62,82 +62,73 @@
         <h1 class="letra_branca"  
         >Calculadora de Resíduo</h1>
       </div>
-
-      
-
       <!-- Mensagens de marketing e outras featurezinhas
       ================================================== -->
       <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
-
+      <br>
       <div class="container marketing">
-
+        <form method="POST" action="#" autocomplete="false">
+          
+        
         <!-- Três colunas de texto, abaixo do carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Título</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <div class="form-group">
+              <label>Nome</label>
+              <input type="text" class="form-control" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+              <label>Email Profissional</label>
+              <input type="email" class="form-control" placeholder="nome@exemplo.com">
+            </div>     
+            <div class="form-group">
+              <label>Número de Telefone Celular</label>
+              <input type="text" class="form-control" placeholder="Digite seu telefone">
+            </div>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Título</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <div class="form-group">
+              <label>Nome da Empresa</label>
+              <input type="text" class="form-control" placeholder="Digite o nome da empresa">
+            </div>
+            <div class="form-group">
+              <label>Valor Gasto na Destinação do Resíduo</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">R$</div>
+                </div>
+                <input type="number" class="form-control" placeholder="Digite o gasto na destinação do resíduo">
+              </div>              
+            </div>      
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Título</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <div class="form-group">
+              <label>Categoria do Resíduo</label>
+              <select class="form-control" >
+                <option>Plásticos</option>              
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Subcategoria do Resíduo</label>
+              <select class="form-control">
+                <option>PP</option>   
+                <option>PET</option>           
+              </select>
+            </div>          
+            <div class="form-group">
+              <label>Quantidade em Toneladas(Ton)</label>
+              <input type="number" class="form-control" placeholder="Digite a quantidade em toneladas(Ton)">
+            </div>
           </div><!-- /.col-lg-4 -->
+          <div class="col-lg-12">
+            <input type="submit" value="Calcular" class="form-control btn btn_navbar">
+
+          </div>
+        </form>
         </div><!-- /.row -->
 
-
-        <!-- COMEÇAM AS MENCIONADAS FEATUREZINHAS xD -->
-
         <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Primeiro título de featurezinhas. <span class="text-muted">Supreendente, não?!</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Aêêê, moleque! <span class="text-muted">Tá legal ou não tá?</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">E, por último, essa aqui. <span class="text-muted">Xeque-mate!</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- /FIM DAS FEATUREZINHAS *-* -->
-
       </div><!-- /.container -->
-
 
       <!-- FOOTER -->
       <footer class="container">
