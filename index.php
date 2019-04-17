@@ -104,14 +104,24 @@
           <div class="col-lg-4">
             <div class="form-group">
               <label>Categoria do Resíduo</label>
-              <select class="form-control" >
-                <option>Plásticos</option>              
+              <select class="form-control" name="categoria">
+                <option>Selecione uma Categoria</option>   
+                <?php
+                  $query = mysqli_query($connRec, "SELECT id, name FROM category") or die(mysqli_error($connRec));
+                  while($resultado = mysqli_fetch_array($query))
+                  {
+                  ?>
+                    <option value="<?php echo $resultado['id']; ?>"><?php echo $resultado['name']; ?></option>
+                    <?php
+                  }
+                  ?>                 
+                
               </select>
             </div>
             <div class="form-group">
               <label>Subcategoria do Resíduo</label>
-              <select class="form-control">
-                <option>PP</option>   
+              <select class="form-control" name="subcategoria">
+                <option>Selecione uma Subcategoria</option>   
                 <option>PET</option>           
               </select>
             </div>          
