@@ -10,7 +10,7 @@
     <title>Calculadora de Resíduo</title>
 
     <!-- Principal CSS do Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Estilos customizados para esse template -->
     <link href="css/style.css" rel="stylesheet">
@@ -19,7 +19,7 @@
 
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#"><img height="50" class="img-responsive" src="img/logo_semfundo_USAR-ESSE-LOGO.png"></a>
+        <a class="navbar-brand" href="https://www.brpolen.com.br/"><img height="50" class="img-responsive" src="img/logo_semfundo_USAR-ESSE-LOGO.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,17 +35,32 @@
               <a class="nav-link disabled" href="#">Desativado</a>
             </li>
           </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-          </form>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="btn btn_navbar" style="margin-right: 10px" href="http://www.brpolen.com.br/account/login/?lang=pt-br">Login</a>
+            </li>     
+
+            <li class="nav-item">
+              <!-- Exemplo de único botão danger -->
+              <div class="btn-group">
+                <button type="button" class="btn btn_navbar dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cadastre-se
+                </button>
+                <div class="dropdown-menu btn_navbar">
+                  <a class="dropdown-item btn_navbar" href="http://www.brpolen.com.br/register/seller/?lang=pt-br">Vender Resíduos</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item btn_navbar" href="http://www.brpolen.com.br/register/buyer/?lang=pt-br">Comprar Resíduos</a>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
-    <br><br>
-    <main role="main">
+    <main role="main" style="margin-top: 75px">
       <div class="topo">
-        <h1 class="letra_branca">Calculadora de Resíduo</h1>
+        <h1 class="letra_branca"  
+        >Calculadora de Resíduo</h1>
       </div>
 
       
@@ -127,7 +142,8 @@
       <!-- FOOTER -->
       <footer class="container">
         <p class="float-right"><a href="#">Voltar ao topo</a></p>
-        <p>&copy; Companhia S.A., 2017-2018 &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+        <p>&copy; Polen - Solução e Valoração de Resíduos
+, 2019 &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
       </footer>
     </main>
 
