@@ -1,0 +1,12 @@
+<?php
+$servidor   = "SERVIDOR";//Nome do servidor
+$usuario    = "USUÁRIO";//Nome do usuário
+$pws        = "SENHA";//senha
+$banco      = "BANCO";//Nome do Bando de dados
+//Variável de conexão
+$conn = mysqli_connect($servidor,$usuario,$pws,$banco);
+//Verifica se a conexão foi realizada
+if(!$conn){
+    //Se não conectar ele vai matar e escrever o erro
+	die("Não conectou ao bd ".mysqli_connect_error());
+}
