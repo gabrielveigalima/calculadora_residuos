@@ -1,3 +1,9 @@
+<?php
+
+include_once('connect/connect.php')
+
+?>
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -108,8 +114,7 @@
                 <option>Selecione uma Categoria</option>   
                 <?php
                   $query = mysqli_query($connRec, "SELECT id, name FROM category") or die(mysqli_error($connRec));
-                  while($resultado = mysqli_fetch_array($query))
-                  {
+                  while($resultado = mysqli_fetch_array($query)){
                   ?>
                     <option value="<?php echo $resultado['id']; ?>"><?php echo $resultado['name']; ?></option>
                     <?php
