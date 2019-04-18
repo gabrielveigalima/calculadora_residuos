@@ -5,6 +5,9 @@ $pws        = "SENHA";//senha
 $banco      = "BANCO";//Nome do Bando de dados
 //Variável de conexão
 $conn = mysqli_connect($servidor,$usuario,$pws,$banco);
+
+mysqli_query( $conn, 'SET NAMES "utf8" COLLATE "utf8_general_ci"' );
+
 //Verifica se a conexão foi realizada
 if(!$conn){
     //Se não conectar ele vai matar e escrever o erro
