@@ -73,7 +73,7 @@ include_once('connect/connect.php')
       <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
       <br>
       <div class="container marketing">
-        <form method="POST" action="#" autocomplete="false">
+        <form method="POST" action="cad_calc.php" autocomplete="false">
           
         
         <!-- Três colunas de texto, abaixo do carousel -->
@@ -110,7 +110,7 @@ include_once('connect/connect.php')
           <div class="col-lg-4">
             <div class="form-group">
               <label>Categoria do Resíduo</label>
-              <select class="form-control" required name="categoria">
+              <select class="form-control" required name="category">
                 <option>Selecione uma Categoria</option>   
                 <?php
                   $query = mysqli_query($conn, "SELECT id, name FROM category") or die(mysqli_error($conn));
@@ -125,7 +125,7 @@ include_once('connect/connect.php')
             </div>
             <div class="form-group">
               <label>Subcategoria do Resíduo</label>
-              <select class="form-control" name="subcategoria" required>
+              <select class="form-control" name="subcategory" required>
                 <option>Selecione uma Subcategoria</option>   
                 <?php
                   $query = mysqli_query($conn, "SELECT id, name FROM sub_category") or die(mysqli_error($conn));
