@@ -18,14 +18,34 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && i
 	$amount 		= mysqli_escape_string($conn, $_POST['amount']);
 
 
-	$query = mysqli_query($conn, "SELECT id 
+	$verificar_usuario = mysqli_query($conn, "
+								SELECT id 
 								FROM users 
-								WHERE email = '$email'") or die(mysqli_error($conn));
-	$num_rows = mysqli_num_rows($query);
+								WHERE email = '$email'
+								") 
+	or die(mysqli_error($conn));
+
+	$num_rows = mysqli_num_rows($verificar_usuario);
 	if ($num_rows > 0){
 		echo "cadastrado";
+
+		$atualiza_usuario = mysqli_query($conn, "
+								UPDATE users 
+								SET  name = '$name', tel = '$tel', 
+									company = '$name_company', updated_at = NOW()
+								WHERE email = '$email'								
+									") 
+		or die(mysqli_error($conn));
+
 	}else{
 		echo "não cadastrado";
+
+		$cadastra_usuario = mysqli_query($conn, "
+								INSERT INTO users (name, email, tel, company,created_at)
+								VALUES 
+									('$name','$email','$tel','$name_company',NOW())
+									") 
+		or die(mysqli_error($conn));
 	}
 	
 } else {
