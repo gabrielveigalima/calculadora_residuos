@@ -81,21 +81,21 @@ include_once('connect/connect.php')
           <div class="col-lg-4">
             <div class="form-group">
               <label>Nome</label>
-              <input type="text" class="form-control" placeholder="Digite seu nome">
+              <input name="name" required type="text" class="form-control" placeholder="Digite seu nome">
             </div>
             <div class="form-group">
               <label>Email Profissional</label>
-              <input type="email" class="form-control" placeholder="nome@exemplo.com">
+              <input name="email" required type="email" class="form-control" placeholder="nome@exemplo.com">
             </div>     
             <div class="form-group">
               <label>Número de Telefone Celular</label>
-              <input type="text" class="form-control" placeholder="Digite seu telefone">
+              <input name="tel" required type="text" class="form-control" placeholder="Digite seu telefone">
             </div>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <div class="form-group">
               <label>Nome da Empresa</label>
-              <input type="text" class="form-control" placeholder="Digite o nome da empresa">
+              <input name="name_company" required type="text" class="form-control" placeholder="Digite o nome da empresa">
             </div>
             <div class="form-group">
               <label>Valor Gasto na Destinação do Resíduo</label>
@@ -103,14 +103,14 @@ include_once('connect/connect.php')
                 <div class="input-group-prepend">
                   <div class="input-group-text">R$</div>
                 </div>
-                <input type="number" class="form-control" placeholder="Digite o gasto na destinação do resíduo">
+                <input name="destination" required type="number" class="form-control" placeholder="Digite o gasto na destinação do resíduo">
               </div>              
             </div>      
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <div class="form-group">
               <label>Categoria do Resíduo</label>
-              <select class="form-control" name="categoria">
+              <select class="form-control" required name="categoria">
                 <option>Selecione uma Categoria</option>   
                 <?php
                   $query = mysqli_query($conn, "SELECT id, name FROM category") or die(mysqli_error($conn));
@@ -125,7 +125,7 @@ include_once('connect/connect.php')
             </div>
             <div class="form-group">
               <label>Subcategoria do Resíduo</label>
-              <select class="form-control" name="subcategoria">
+              <select class="form-control" name="subcategoria" required>
                 <option>Selecione uma Subcategoria</option>   
                 <?php
                   $query = mysqli_query($conn, "SELECT id, name FROM sub_category") or die(mysqli_error($conn));
@@ -139,7 +139,7 @@ include_once('connect/connect.php')
             </div>          
             <div class="form-group">
               <label>Quantidade em Toneladas(Ton)</label>
-              <input type="number" class="form-control" placeholder="Digite a quantidade em toneladas(Ton)">
+              <input name="amount" required type="number" class="form-control" placeholder="Digite a quantidade em toneladas(Ton)">
             </div>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-12">
