@@ -50,6 +50,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && i
 	
 } else {
 	echo "Preencha todos os campos!";
-	header('Location:index.php');
+	
 } 
 
+header('Location:index.php');
