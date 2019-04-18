@@ -60,4 +60,4 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && i
 	
 } 
 
-//header('Location:index.php');
+header('Location:index.php');
