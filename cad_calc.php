@@ -47,10 +47,17 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && i
 									") 
 		or die(mysqli_error($conn));
 	}
+	$resultado_verificar_usuario = mysqli_fetch_assoc($verificar_usuario);
+	$cadastra_residuos = mysqli_query($conn, "
+								INSERT INTO calculation (amount, destination_value, user_id, sub_category_id,created_at)
+								VALUES 
+									('$amount','$destination','".$resultado_verificar_usuario['id']."','$subcategory',NOW())
+									") 
+	or die(mysqli_error($conn));
 	
 } else {
 	echo "Preencha todos os campos!";
 	
 } 
 
-header('Location:index.php');
+//header('Location:index.php');
