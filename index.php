@@ -154,6 +154,19 @@ include_once('connect/connect.php')
         <hr class="featurette-divider">
       </div><!-- /.container -->
 
+      <div class="col-lg-12">
+        <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+          portalId: "4445510",
+          formId: "c0734bf6-45c8-4f05-8eb7-dd72ddd2c019"
+        });
+        </script>
+      </div>
+
       <!-- FOOTER -->
       <footer class="container">
         
