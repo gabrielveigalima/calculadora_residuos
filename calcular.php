@@ -1,6 +1,6 @@
 <?php
 
-include_once('connect/connect.php')
+include_once('connect/connect.php');
 
 session_start();
 if (isset($_SESSION['preencher'])){
