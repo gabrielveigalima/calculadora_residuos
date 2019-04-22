@@ -69,6 +69,8 @@
       <div class="container marketing">
         <?php
 
+        session_start();
+
         if (isset($_SESSION['aviso'])){
           echo $_SESSION['aviso'];
           unset($_SESSION['aviso']);

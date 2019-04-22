@@ -183,15 +183,15 @@ Privacidade</a> &middot; <a target="_black" href="https://brpolenmarketplace.s3.
 
 <?php 
 
-unset($_SESSION['preencher']);
+  unset($_SESSION['preencher']);
 
-} else {
-    $_SESSION['aviso'] = "<div class='alert alert-danger' role='alert'>
-    Preencha o formulário para calcular o valor seu resíduo!
-  </div>";
+  } 
+}
+else {
+    $_SESSION['aviso'] = "<div class='alert alert-danger' role='alert'>    Preencha o formulário para calcular o valor seu resíduo!  </div>";
 
-  header("Location:index.php");
-  }
+  header("Location: index.php");
+  
 }
 
 
