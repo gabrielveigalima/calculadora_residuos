@@ -1,11 +1,3 @@
-<?php
-
-session_start();
-
-include_once('connect/connect.php')
-
-?>
-
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -75,8 +67,16 @@ include_once('connect/connect.php')
       <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
       <br>
       <div class="container marketing">
-        <form method="POST" action="cad_calc.php" autocomplete="false">
-          
+        <?php
+
+        if (isset($_SESSION['aviso'])){
+          echo $_SESSION['aviso'];
+          unset($_SESSION['aviso']);
+
+        }
+        ?>
+
+        <form method="POST" action="cad_calc.php" autocomplete="false">          
         
         <!-- Três colunas de texto, abaixo do carousel -->
         <div class="row">
