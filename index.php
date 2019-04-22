@@ -80,92 +80,24 @@ include_once('connect/connect.php')
         
         <!-- Três colunas de texto, abaixo do carousel -->
         <div class="row">
-          <div class="col-lg-4">
-            <div class="form-group">
-              <label>Nome</label>
-              <input name="name" required type="text" class="form-control" placeholder="Digite seu nome">
-            </div>
-            <div class="form-group">
-              <label>Email Profissional</label>
-              <input name="email" required type="email" class="form-control" placeholder="nome@exemplo.com">
-            </div>     
-            <div class="form-group">
-              <label>Número de Telefone Celular</label>
-              <input name="tel" required type="text" class="form-control" placeholder="Digite seu telefone">
-            </div>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <div class="form-group">
-              <label>Nome da Empresa</label>
-              <input name="name_company" required type="text" class="form-control" placeholder="Digite o nome da empresa">
-            </div>
-            <div class="form-group">
-              <label>Valor Gasto na Destinação do Resíduo</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">R$</div>
-                </div>
-                <input name="destination" required type="number" class="form-control" placeholder="Digite o gasto na destinação do resíduo">
-              </div>              
-            </div>      
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <div class="form-group">
-              <label>Categoria do Resíduo</label>
-              <select class="form-control" required name="category">
-                <option>Selecione uma Categoria</option>   
-                <?php
-                  $query = mysqli_query($conn, "SELECT id, name FROM category") or die(mysqli_error($conn));
-                  while($resultado = mysqli_fetch_array($query)){
-                  ?>
-                    <option value="<?php echo $resultado['id']; ?>"><?php echo $resultado['name']; ?></option>
-                    <?php
-                  }
-                  ?>                 
-                
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Subcategoria do Resíduo</label>
-              <select class="form-control" name="subcategory" required>
-                <option>Selecione uma Subcategoria</option>   
-                <?php
-                  $query = mysqli_query($conn, "SELECT id, name FROM sub_category") or die(mysqli_error($conn));
-                  while($resultado = mysqli_fetch_array($query)){
-                  ?>
-                    <option value="<?php echo $resultado['id']; ?>"><?php echo $resultado['name']; ?></option>
-                    <?php
-                  }
-                  ?>     
-              </select>
-            </div>          
-            <div class="form-group">
-              <label>Quantidade em Toneladas(Ton)</label>
-              <input name="amount" required type="number" class="form-control" placeholder="Digite a quantidade em toneladas(Ton)">
-            </div>
-          </div><!-- /.col-lg-4 -->
           <div class="col-lg-12">
-            <input type="submit" value="Calcular" class="form-control btn btn_navbar">
-
-          </div>
-        </form>
+            <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+            <![endif]-->
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+              portalId: "4445510",
+              formId: "99c7d238-3da6-4e17-bd81-cd67792c8d87"
+            });
+            </script>
+          </div>          
         </div><!-- /.row -->
 
         <hr class="featurette-divider">
       </div><!-- /.container -->
 
-      <div class="col-lg-12">
-        <!--[if lte IE 8]>
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-        <![endif]-->
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-        <script>
-          hbspt.forms.create({
-          portalId: "4445510",
-          formId: "99c7d238-3da6-4e17-bd81-cd67792c8d87"
-        });
-        </script>
-      </div>
+      
 
       <!-- FOOTER -->
       <footer class="container">
