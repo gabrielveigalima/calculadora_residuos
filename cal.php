@@ -2,7 +2,7 @@
 
 session_start();
 
-if (isset($_GET['confirm']){
+if (isset($_GET['confirm'])){
 
 	if ($_GET['confirm'] == 'ok'){
 
