@@ -93,7 +93,7 @@ include_once('connect/connect.php')
             </script>
           </div>   
           <div class="col-md-6" >
-            <img class="img-fluid" src="img/calculadora.png">
+            <img class="img-fluid" src="img/Calculadora.png">
           </div>       
         </div><!-- /.row -->
 
