@@ -1,8 +1,12 @@
 <?php
 
-session_start();
-
 include_once('connect/connect.php')
+
+session_start();
+if (isset($_SESSION['preencher'])){
+  if ($_SESSION['preencher'] == 1){
+
+
 
 ?>
 
@@ -177,3 +181,14 @@ Privacidade</a> &middot; <a target="_black" href="https://brpolenmarketplace.s3.
   </body>
 </html>
 
+<?php 
+
+} else {
+    $_SESSION['aviso'] = "<div class='alert alert-danger' role='alert'>
+    Preencha o formulário para calcular o valor seu resíduo!
+  </div>";
+  }
+}
+
+
+?>
