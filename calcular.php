@@ -71,7 +71,7 @@ session_start();
       <div class="row">       
         
         <div class="col-lg-6">
-          <form method="POST" action="cad_calc.php" autocomplete="false">
+          <form method="POST" action="relatorio.php" autocomplete="false">
             <div class="form-group">
               <label>Categoria do Resíduo</label>
               <select class="form-control" required name="category">
