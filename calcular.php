@@ -3,8 +3,8 @@
 include_once('connect/connect.php');
 
 session_start();
-if (isset($_SESSION['preencher'])){
-  if ($_SESSION['preencher'] == 1){
+//if (isset($_SESSION['preencher'])){
+  //if ($_SESSION['preencher'] == 1){
 
 
 
@@ -66,46 +66,12 @@ if (isset($_SESSION['preencher'])){
         <h1 class="letra_branca"  
         >Calculadora de Resíduo</h1>
       </div>
-      <!-- Mensagens de marketing e outras featurezinhas
-      ================================================== -->
-      <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
       <br>
       <div class="container marketing">
-        <form method="POST" action="cad_calc.php" autocomplete="false">
-          
+      <div class="row">       
         
-        <!-- Três colunas de texto, abaixo do carousel -->
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="form-group">
-              <label>Nome</label>
-              <input name="name" required type="text" class="form-control" placeholder="Digite seu nome">
-            </div>
-            <div class="form-group">
-              <label>Email Profissional</label>
-              <input name="email" required type="email" class="form-control" placeholder="nome@exemplo.com">
-            </div>     
-            <div class="form-group">
-              <label>Número de Telefone Celular</label>
-              <input name="tel" required type="text" class="form-control" placeholder="Digite seu telefone">
-            </div>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <div class="form-group">
-              <label>Nome da Empresa</label>
-              <input name="name_company" required type="text" class="form-control" placeholder="Digite o nome da empresa">
-            </div>
-            <div class="form-group">
-              <label>Valor Gasto na Destinação do Resíduo</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">R$</div>
-                </div>
-                <input name="destination" required type="number" class="form-control" placeholder="Digite o gasto na destinação do resíduo">
-              </div>              
-            </div>      
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
+        <div class="col-lg-6">
+          <form method="POST" action="cad_calc.php" autocomplete="false">
             <div class="form-group">
               <label>Categoria do Resíduo</label>
               <select class="form-control" required name="category">
@@ -139,18 +105,20 @@ if (isset($_SESSION['preencher'])){
               <label>Quantidade em Toneladas(Ton)</label>
               <input name="amount" required type="number" class="form-control" placeholder="Digite a quantidade em toneladas(Ton)">
             </div>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-12">
             <input type="submit" value="Calcular" class="form-control btn btn_navbar">
-
+          </form><br>
+          <div class="alert alert-light" role="alert">
+            OBS: Caso sua empresa gere mais de uma subcategoria de resíduo plástico, calcule apenas um tipo por envio.
+            <br><br>
+            AVISO: Os preços podem variar por estado, comprador e estão em constante modificação. Dessa forma, os valores usados como base para o cálculo são estimativas aproximadas. O preço pode não corresponder exatamente na sua região.
           </div>
-        </form>
+        </div><!-- /.col-md-6 -->        
+        <div class="col-md-6" >
+          <img class="img-fluid" src="img/Calculadora.png">
+        </div> 
         </div><!-- /.row -->
-
         <hr class="featurette-divider">
-      </div><!-- /.container -->
-
-      
+      </div><!-- /.container -->      
 
       <!-- FOOTER -->
       <footer class="container">
@@ -175,7 +143,7 @@ Privacidade</a> &middot; <a target="_black" href="https://brpolenmarketplace.s3.
 
 <?php 
 
-  unset($_SESSION['preencher']);
+ /* unset($_SESSION['preencher']);
 
   } 
 }
@@ -186,5 +154,5 @@ else {
   
 }
 
-
+*/
 ?>
