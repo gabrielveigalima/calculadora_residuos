@@ -3,8 +3,8 @@
 include_once('connect/connect.php');
 
 session_start();
-//if (isset($_SESSION['preencher'])){
-  //if ($_SESSION['preencher'] == 1){
+if (isset($_SESSION['preencher'])){
+  if ($_SESSION['preencher'] == 1){
 
 
 
@@ -144,7 +144,7 @@ Privacidade</a> &middot; <a target="_black" href="https://brpolenmarketplace.s3.
 
 <?php 
 
- /* unset($_SESSION['preencher']);
+ unset($_SESSION['preencher']);
 
   } 
 }
@@ -155,5 +155,4 @@ else {
   
 }
 
-*/
 ?>
