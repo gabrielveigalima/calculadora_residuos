@@ -19,7 +19,7 @@ session_start();
     <meta name="author" content="GABRIEL VEIGA LIMA">
     <link rel="icon" href="img/LOGO-BOLA_semfundo_USAR-ESSE-LOGO.png">
 
-    <title>Calculadora de Resíduo</title>
+    <title>Calculadora do Potencial Econômico dos Resíduos Plásticos</title>
 
     <!-- Principal CSS do Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -64,7 +64,7 @@ session_start();
     <main role="main" style="margin-top: 75px">
       <div class="topo">
         <h1 class="letra_branca"  
-        >Calculadora de Resíduo</h1>
+        >Calculadora do Potencial Econômico dos Resíduos Plásticos</h1>
       </div>
       <br>
       <div class="container marketing">

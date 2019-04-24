@@ -7,7 +7,7 @@
     <meta name="author" content="GABRIEL VEIGA LIMA">
     <link rel="icon" href="img/LOGO-BOLA_semfundo_USAR-ESSE-LOGO.png">
 
-    <title>Calculadora de Resíduo</title>
+    <title>Calculadora do Potencial Econômico dos Resíduos Plásticos</title>
 
     <!-- Principal CSS do Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -53,7 +53,7 @@
     <main role="main" style="margin-top: 75px">
       <div class="topo">
         <h1 class="letra_branca"  
-        >Calculadora de Resíduo</h1>
+        >Calculadora do Potencial Econômico dos Resíduos Plásticos</h1>
       </div>
       <!-- Mensagens de marketing e outras featurezinhas
       ================================================== -->
