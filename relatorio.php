@@ -26,7 +26,7 @@ if (isset($_POST['subcategory']) && isset($_POST['amount'])){
 
     $valor = $resultado['price'] * $amount;
 	
-    $texto = "Os resíduos plásticos de ".$resultado['name']." gerados tem potencial para retornar R$".$valor." mensalmente para sua empresa.<br><br>Você pode transformar este potencial em realidade através da Plataforma da Polen . A Polen é uma plataforma online que conecta empresas que geram resíduos com empresas que compram resíduos, em todo o Brasil. Através dela, sua empresa pode vender seus resíduos de plástico, começar a cortar custos e fazer receita extra. <a target='_blanck' href= 'https://www.brpolen.com.br/'>Cadastre-se gratuitamente aqui!</a>";
+    $texto = "Os resíduos plásticos de ".$resultado['name']." gerados tem potencial para retornar mensalmente para sua empresa: <center><h1><strong>R$".$valor."</strong></h1></center> <br>Você pode transformar este potencial em realidade através da Plataforma da Polen . A Polen é uma plataforma online que conecta empresas que geram resíduos com empresas que compram resíduos, em todo o Brasil. Através dela, sua empresa pode vender seus resíduos de plástico, começar a cortar custos e fazer receita extra. <a target='_blanck' href= 'https://www.brpolen.com.br/'>Cadastre-se gratuitamente aqui!</a>";
 
     
 
@@ -56,6 +56,7 @@ if (isset($_POST['subcategory']) && isset($_POST['amount'])){
 		      }
 		      body{
 		      	font-family: "Montserrat", sans-serif;
+		      	color: #232f3e;;
 		      }
 		    </style>
 		</head>
