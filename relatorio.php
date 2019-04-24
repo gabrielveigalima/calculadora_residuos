@@ -42,7 +42,8 @@ if (isset($_POST['subcategory']) && isset($_POST['amount'])){
 			<title>Calculadora do Potencial Econômico dos Resíduos Plásticos - Polen</title>
 			<meta name="description" content="Cálculo do Potencial Econômico dos Resíduos Plásticos">
     		<meta name="author" content="Polen - Solução e Valoração de Resíduos">
-    		<link rel="icon" href="http://calc.brpolen.com.br/img/LOGO-BOLA_semfundo_USAR-ESSE-LOGO.png">
+    		<link rel="icon" href="./img/LOGO-BOLA_semfundo_USAR-ESSE-LOGO.png">
+
     		<style type="text/css">
 		      .logo{
 		          background-image: url("./img/logo_semfundo_USAR-ESSE-LOGO.png");
@@ -53,9 +54,12 @@ if (isset($_POST['subcategory']) && isset($_POST['amount'])){
 				  margin-bottom: 50px;
 				  
 		      }
+		      body{
+		      	font-family: "Montserrat", sans-serif;
+		      }
 		    </style>
 		</head>
-		<body style="font-family: "Montserrat", sans-serif;">
+		<body>
 			<div class="logo" >.</div>
 			<h1  style="text-align: center;">Relatório do Potencial Econômico dos Resíduos Plásticos</h1>
 			<p>'.$texto.'</p>
