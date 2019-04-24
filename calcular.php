@@ -69,7 +69,9 @@ session_start();
       <br>
       <div class="container marketing">
       <div class="row">       
-        
+        <div class="col-md-6" >
+          <img class="img-fluid" src="img/Calculadora.png">
+        </div>
         <div class="col-lg-6">
           <form method="POST" action="relatorio.php" autocomplete="false">
             <div class="form-group">
@@ -112,13 +114,10 @@ session_start();
             <br><br>
             AVISO: Os preços podem variar por estado, comprador e estão em constante modificação. Dessa forma, os valores usados como base para o cálculo são estimativas aproximadas. O preço pode não corresponder exatamente na sua região.
           </div>
-        </div><!-- /.col-md-6 -->        
-        <div class="col-md-6" >
-          <img class="img-fluid" src="img/Calculadora.png">
-        </div> 
-        </div><!-- /.row -->
-        <hr class="featurette-divider">
-      </div><!-- /.container -->      
+        </div><!-- /.col-md-6 -->         
+      </div><!-- /.row -->
+      <hr class="featurette-divider">
+    </div><!-- /.container -->      
 
       <!-- FOOTER -->
       <footer class="container">
