@@ -35,9 +35,21 @@ if (isset($_POST['subcategory']) && isset($_POST['amount'])){
 
 	// Carrega seu HTML
 	$dompdf->load_html('
-			<img height="100" src="http://calc.brpolen.com.br/img/logo_semfundo_USAR-ESSE-LOGO.png">
-			<h1 style="text-align: center;">Relatório</h1>
+		
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title>Calculadora do Potencial Econômico dos Resíduos Plásticos - Polen</title>
+			<meta name="description" content="Cálculo do Potencial Econômico dos Resíduos Plásticos">
+    		<meta name="author" content="Polen - Solução e Valoração de Resíduos">
+    		<link rel="icon" href="http://calc.brpolen.com.br/img/LOGO-BOLA_semfundo_USAR-ESSE-LOGO.png">
+
+		</head>
+		<body>
+			<h1 style="text-align: center;">Relatório do Potencial Econômico dos Resíduos Plásticos</h1>
 			<p>'.$texto.'</p>
+		</body>
+		</html>
 		');
 
 	//Renderizar o html
@@ -45,7 +57,7 @@ if (isset($_POST['subcategory']) && isset($_POST['amount'])){
 
 	//Exibibir a página
 	$dompdf->stream(
-		"relatorio_polen.pdf", 
+		"relatorio_polen_potencial_economico_dos_residuos_plasticos.pdf", 
 		array(
 			"Attachment" => false //Para realizar o download somente alterar para true
 		)
