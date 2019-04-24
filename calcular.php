@@ -75,22 +75,24 @@ session_start();
         <div class="col-lg-6">
           <form method="POST" action="relatorio.php" autocomplete="false">
             <div class="form-group">
+              <!--
               <label>Categoria do Resíduo</label>
               <select class="form-control" required name="category">
                 <option>Selecione uma Categoria</option>   
                 <?php
-                  $query = mysqli_query($conn, "SELECT id, name FROM category") or die(mysqli_error($conn));
-                  while($resultado = mysqli_fetch_array($query)){
+                  #$query = mysqli_query($conn, "SELECT id, name FROM category") or die(mysqli_error($conn));
+                  #while($resultado = mysqli_fetch_array($query)){
                   ?>
-                    <option value="<?php echo $resultado['id']; ?>"><?php echo $resultado['name']; ?></option>
+                    <option value="<?php #echo $resultado['id']; ?>"><?php #echo $resultado['name']; ?></option>
                     <?php
-                  }
+                  #}
                   ?>                 
                 
               </select>
-            </div>
+            </div> 
+          -->
             <div class="form-group">
-              <label>Subcategoria do Resíduo</label>
+              <label>Categoria do Plástico</label>
               <select class="form-control" name="subcategory" required>
                 <option>Selecione uma Subcategoria</option>   
                 <?php
