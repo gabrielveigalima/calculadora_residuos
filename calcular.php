@@ -106,7 +106,7 @@ session_start();
               </select>
             </div>          
             <div class="form-group">
-              <label>Quantidade em Toneladas(Ton)</label>
+              <label>Quantidade de Resíduos Gerada Mensalmente (Ton)</label>
               <input name="amount" required type="number" class="form-control" placeholder="Digite a quantidade em toneladas(Ton)">
             </div>
             <input type="submit" value="Calcular" class="form-control btn btn_navbar">
