@@ -75,6 +75,9 @@
         
         <!-- Três colunas de texto, abaixo do carousel -->
         <div class="row">
+          <div class="col-md-6" >
+            <img class="img-fluid" src="img/Calculadora.png">
+          </div>
           <div class="col-md-6">
             <!--[if lte IE 8]>
             <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
@@ -86,10 +89,7 @@
               formId: "99c7d238-3da6-4e17-bd81-cd67792c8d87"
             });
             </script>
-          </div>   
-          <div class="col-md-6" >
-            <img class="img-fluid" src="img/Calculadora.png">
-          </div>       
+          </div>          
         </div><!-- /.row -->
 
         <hr class="featurette-divider">
