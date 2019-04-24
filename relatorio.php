@@ -1,5 +1,11 @@
 <?php
 
+//referenciar o DomPDF com namespace
+use Dompdf\Dompdf;
+
+// include autoloader
+require_once("dompdf/autoload.inc.php");
+
 session_start();
 
 include_once('connect/connect.php');
@@ -20,9 +26,30 @@ if (isset($_POST['subcategory']) && isset($_POST['amount'])){
 
     $valor = $resultado['price'] * $amount;
 	
-    echo "Os resíduos plásticos de ".$resultado['name']." gerados tem potencial para retornar R$".$valor." mensalmente para sua empresa.<br><br>Você pode transformar este potencial em realidade através da Plataforma da Polen . A Polen é uma plataforma online que conecta empresas que geram resíduos com empresas que compram resíduos, em todo o Brasil. Através dela, sua empresa pode vender seus resíduos de plástico, começar a cortar custos e fazer receita extra. <a target='_blanck' href= 'https://www.brpolen.com.br/'>Cadastre-se gratuitamente aqui!</a>";
+    $texto = "Os resíduos plásticos de ".$resultado['name']." gerados tem potencial para retornar R$".$valor." mensalmente para sua empresa.<br><br>Você pode transformar este potencial em realidade através da Plataforma da Polen . A Polen é uma plataforma online que conecta empresas que geram resíduos com empresas que compram resíduos, em todo o Brasil. Através dela, sua empresa pode vender seus resíduos de plástico, começar a cortar custos e fazer receita extra. <a target='_blanck' href= 'https://www.brpolen.com.br/'>Cadastre-se gratuitamente aqui!</a>";
 
+    
 
+	//Criando a Instancia
+	$dompdf = new DOMPDF();
+
+	// Carrega seu HTML
+	$dompdf->load_html('
+			<img height="100" src="http://calc.brpolen.com.br/img/logo_semfundo_USAR-ESSE-LOGO.png">
+			<h1 style="text-align: center;">Relatório</h1>
+			<p>'.$texto.'</p>
+		');
+
+	//Renderizar o html
+	$dompdf->render();
+
+	//Exibibir a página
+	$dompdf->stream(
+		"relatorio_polen.pdf", 
+		array(
+			"Attachment" => false //Para realizar o download somente alterar para true
+		)
+	);
 
 }
 ?>
