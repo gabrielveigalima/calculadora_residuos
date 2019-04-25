@@ -14,6 +14,18 @@
 
     <!-- Estilos customizados para esse template -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139040595-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-139040595-1');
+    </script>
+
+
   </head>
   <body>
 
@@ -119,7 +131,7 @@ Privacidade</a> &middot; <a target="_black" href="https://brpolenmarketplace.s3.
     <!-- Start of HubSpot Embed Code -->
     <script type=“text/javascript” id=“hs-script-loader” async defer src=“//js.hs-scripts.com/4445510.js”></script>
     <!-- End of HubSpot Embed Code -->
-    
+
     <!-- Principal JavaScript do Bootstrap
     ================================================== -->
     <!-- Foi colocado no final para a página carregar mais rápido -->
