@@ -119,6 +119,10 @@ if (isset($_SESSION['preencher'])){
               <label>Quantidade de Resíduos Gerada Mensalmente (Ton)</label>
               <input name="amount" required type="number" class="form-control" placeholder="Digite a quantidade em toneladas(Ton)">
             </div>
+            <div class="form-group">
+              <label>Valor Gasto na Destinação do Resíduo (R$)</label>
+              <input name="dest" required type="number" class="form-control" placeholder="Digite o valor">
+            </div>
             <input type="submit" value="Calcular" class="form-control btn btn_navbar">
           </form><br>
           <div class="alert alert-light" role="alert">
