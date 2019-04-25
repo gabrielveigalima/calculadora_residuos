@@ -120,7 +120,7 @@ if (isset($_SESSION['preencher'])){
               <input name="amount" required type="number" class="form-control" placeholder="Digite a quantidade em toneladas(Ton)">
             </div>
             <div class="form-group">
-              <label>Valor Gasto na Destinação do Resíduo (R$)</label>
+              <label>Valor Mensal Gasto na Destinação do Resíduo (R$)</label>
               <input name="dest" required type="number" class="form-control" placeholder="Digite o valor">
             </div>
             <input type="submit" value="Calcular" class="form-control btn btn_navbar">
@@ -136,7 +136,7 @@ if (isset($_SESSION['preencher'])){
     </div><!-- /.container -->      
 
       <!-- FOOTER -->
-      <footer class="container" style="margin-top: 15px;">
+      <footer class="container" style="margin-top: 30px;">
         
         <p>&copy; Polen - Solução e Valoração de Resíduos
 , 2019 &middot; <a target="_black"  href="https://brpolenmarketplace.s3.amazonaws.com/platformdocument/ed89de34-politica-de-privacidade-polen-v1.pdf">Política de
