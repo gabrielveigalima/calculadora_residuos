@@ -116,6 +116,10 @@ Privacidade</a> &middot; <a target="_black" href="https://brpolenmarketplace.s3.
       </footer>
     </main>
 
+    <!-- Start of HubSpot Embed Code -->
+    <script type=“text/javascript” id=“hs-script-loader” async defer src=“//js.hs-scripts.com/4445510.js”></script>
+    <!-- End of HubSpot Embed Code -->
+    
     <!-- Principal JavaScript do Bootstrap
     ================================================== -->
     <!-- Foi colocado no final para a página carregar mais rápido -->
