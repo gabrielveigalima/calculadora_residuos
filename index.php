@@ -95,7 +95,7 @@
             <h1 class="text-center">Sobre</h1>
             <p class="text-justify">
             O Brasil gera cerca de 10.5 milhões de toneladas de resíduos plásticos anualmente. Se todo esse material fosse reciclado, seria injetado R$5.7 bilhões na economia nacional. O potencial econômico presente neste tipo de resíduo representa uma grande oportunidade de mercado para as empresas que os geram. Entretanto, nem todas aproveitam desta vantagem.</p>
-            <p class="text-justify">Através da ferramenta gratuita "Calculadora do Potencial Econômico dos Resíduos Plásticos" você receberá o valor aproximado de quanto sua empresa pode ganhar com a venda dos resíduos de plástico gerado por ela. Você perceberá como a comercialização é a solução para lucrativa para a destinação de seus resíduos e saberá por onde começar.</p>
+            <p class="text-justify">Através da ferramenta gratuita "Calculadora do Potencial Econômico dos Resíduos Plásticos" você receberá o valor aproximado de quanto sua empresa pode ganhar com a venda dos resíduos de plástico gerado por ela. Você perceberá como a comercialização é a solução mais lucrativa para a destinação de seus resíduos e saberá por onde começar.</p>
             <p class="text-justify">Preencha o formulário e aproveite!</p>
           </div>      
         </div><!-- /.row -->
