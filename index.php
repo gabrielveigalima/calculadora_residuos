@@ -141,6 +141,11 @@ Privacidade</a> &middot; <a target="_black" href="https://brpolenmarketplace.s3.
     <script src="js/bootstrap.min.js"></script>
     <!-- Só faz o nossos placeholders de imagens funcionarem. Não precisar copiar a próxima linha! -->
     <script src="js/vendor/holder.min.js"></script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type=“text/javascript” id=“hs-script-loader” async defer src=“//js.hs-scripts.com/4445510.js”></script>
+    <!-- End of HubSpot Embed Code -->
+    
   </body>
 </html>
 
