@@ -137,7 +137,7 @@ if (isset($_SESSION['preencher'])){
 
       <!-- FOOTER -->
       <footer class="container" style="margin-top: 30px;">
-        
+        <hr class="featurette-divider">
         <p>&copy; Polen - Solução e Valoração de Resíduos
 , 2019 &middot; <a target="_black"  href="https://brpolenmarketplace.s3.amazonaws.com/platformdocument/ed89de34-politica-de-privacidade-polen-v1.pdf">Política de
 Privacidade</a> &middot; <a target="_black" href="https://brpolenmarketplace.s3.amazonaws.com/platformdocument/c962628b-termo-de-uso-plataforma-da-polen-v1.pdf">Termos</a></p>
