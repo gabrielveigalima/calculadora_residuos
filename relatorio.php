@@ -83,7 +83,7 @@ if (isset($_POST['dest']) && isset($_POST['subcategory']) && isset($_POST['amoun
 } 
 
 else {
-    $_SESSION['aviso'] = "<div class='alert alert-danger' role='alert'>    Preencha o formulário para calcular o valor potencial presente no seu resíduo!  </div>";
+    $_SESSION['aviso'] = "<div class='alert alert-danger' role='alert'>    Preencha o formulário para iniciar o cálculo do valor potencial presente no seu resíduo!  </div>";
 
   header("Location: index.php");
   
