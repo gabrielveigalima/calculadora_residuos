@@ -47,12 +47,15 @@ if (isset($_POST['dest']) && isset($_POST['subcategory']) && isset($_POST['amoun
 
     		<style type="text/css">
 		      .logo{
-		          background-image: url("./img/logo_semfundo_USAR-ESSE-LOGO.png");
+		          background-image: url("./img/Cabecalho.png");
 		          color: #fff;
-				  background-position:left top;
-				  background-repeat:no-repeat;
-				  height: 105px;
-				  margin-bottom: 50px;
+				  background-position:center top;
+				  height: 200px;
+				  width: 100%;
+				  background-size: cover;		
+				  margin-top: -50px;
+				  margin-left: -50px;
+				  margin-right: -50px;
 				  
 		      }
 		      body{
