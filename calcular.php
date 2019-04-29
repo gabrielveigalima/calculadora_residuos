@@ -73,7 +73,7 @@ if (isset($_SESSION['preencher'])){
     </header>
     <main role="main" style="margin-top: 75px">
       <div class="topo">
-        <h1 class="letra_branca"  
+        <h1 class="text-center letra_branca"  
         >Calculadora do Potencial Econômico dos Resíduos Plásticos</h1>
       </div>
       <br>

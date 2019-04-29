@@ -64,7 +64,7 @@
     </header>
     <main role="main" style="margin-top: 75px">
       <div class="topo">
-        <h1 class="letra_branca"  
+        <h1 class="text-center letra_branca"  
         >Calculadora do Potencial Econômico dos Resíduos Plásticos</h1>
       </div>
       <!-- Mensagens de marketing e outras featurezinhas
