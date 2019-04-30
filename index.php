@@ -54,10 +54,7 @@
             </li>
             <li class="nav-item active">
               <a class="letra_branca nav-link" href="https://brpolen.com.br/quotes/search/?lang=pt-br">Buscar compradores <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="letra_branca nav-link" href="http://sobre.brpolen.com.br/admin/sellers/?lang=pt-br">Painel Admin <span class="sr-only"></span></a>
-            </li>
+            </li>            
           </ul>
           <ul class="nav justify-content-end">
             <li class="nav-item">
