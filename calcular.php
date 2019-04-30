@@ -41,19 +41,38 @@ if (isset($_SESSION['preencher'])){
 
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="https://www.brpolen.com.br/"><img height="50" class="img-responsive" src="img/logo_semfundo_USAR-ESSE-LOGO.png"></a>
+        <a class="navbar-brand" href="https://www.brpolen.com.br/?lang=pt-br"><img height="50" class="img-responsive" src="img/logo_semfundo_USAR-ESSE-LOGO.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            
+          <ul class="nav mr-auto justify-content-center">
+            <li class="nav-item active">
+              <a class="letra_branca nav-link" href="https://www.brpolen.com.br/?lang=pt-br">Início <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="letra_branca nav-link" href="http://blog.brpolen.com.br/">Blog <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="letra_branca nav-link" href="http://sobre.brpolen.com.br/como-funciona/">Como Funciona <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="letra_branca nav-link" href="http://sobre.brpolen.com.br/servicos/">Serviços <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="letra_branca nav-link" href="http://sobre.brpolen.com.br/contato/">Contato <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="letra_branca nav-link" href="https://brpolen.com.br/quotes/search/?lang=pt-br">Buscar compradores <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="letra_branca nav-link" href="http://sobre.brpolen.com.br/admin/sellers/?lang=pt-br">Painel Admin <span class="sr-only"></span></a>
+            </li>
           </ul>
           <ul class="nav justify-content-end">
             <li class="nav-item">
               <a class="btn btn_navbar" style="margin-right: 10px" href="http://www.brpolen.com.br/account/login/?lang=pt-br">Login</a>
-            </li>     
-
+            </li>   
             <li class="nav-item">
               <!-- Exemplo de único botão danger -->
               <div class="btn-group">

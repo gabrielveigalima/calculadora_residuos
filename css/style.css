@@ -11,6 +11,13 @@
 .letra_branca{
 	color: #FFF;
 	text-decoration-color: #FFF;
+	font-weight: 600;
+	font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.letra_branca:hover{
+	color: #e8e8e8;
+	text-decoration-color: #e8e8e8;
 }
 
 .btn_navbar{
