@@ -6,17 +6,12 @@ include_once('connect/connect.php');
 
 //Tratando dados do formulário
 
-if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && isset($_POST['name_company']) && isset($_POST['destination']) && isset($_POST['category']) && isset($_POST['subcategory']) && isset($_POST['amount'])){
+if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && isset($_POST['name_company']) && isset($_POST['destination'])){
 
 	$name 			= mysqli_escape_string($conn, $_POST['name']);
 	$email 			= mysqli_escape_string($conn, strtolower ($_POST['email']));
 	$tel 			= mysqli_escape_string($conn, $_POST['tel']);
 	$name_company 	= mysqli_escape_string($conn, $_POST['name_company']);
-	$destination 	= mysqli_escape_string($conn, $_POST['destination']);
-	$category 		= mysqli_escape_string($conn, $_POST['category']);
-	$subcategory 	= mysqli_escape_string($conn, $_POST['subcategory']);
-	$amount 		= mysqli_escape_string($conn, $_POST['amount']);
-
 
 	$verificar_usuario = mysqli_query($conn, "
 								SELECT id 
@@ -36,6 +31,16 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && i
 								WHERE email = '$email'								
 									") 
 		or die(mysqli_error($conn));
+		$verificar_usuario = mysqli_query($conn, "
+								SELECT id 
+								FROM users 
+								WHERE email = '$email'
+								") 
+		or die(mysqli_error($conn));
+
+		$resultado_verificar_usuario = mysqli_fetch_assoc($verificar_usuario);
+		$_SESSION['id'] = $resultado_verificar_usuario['id'];
+	
 
 	}else{
 		echo "não cadastrado";
@@ -46,7 +51,18 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && i
 									('$name','$email','$tel','$name_company',NOW())
 									") 
 		or die(mysqli_error($conn));
+		$verificar_usuario = mysqli_query($conn, "
+								SELECT id 
+								FROM users 
+								WHERE email = '$email'
+								") 
+		or die(mysqli_error($conn));
+
+		$resultado_verificar_usuario = mysqli_fetch_assoc($verificar_usuario);
+		$_SESSION['id'] = $resultado_verificar_usuario['id'];
+	
 	}
+	/*
 	$resultado_verificar_usuario = mysqli_fetch_assoc($verificar_usuario);
 	$cadastra_residuos = mysqli_query($conn, "
 								INSERT INTO calculation (amount, destination_value, user_id, sub_category_id,created_at)
@@ -55,9 +71,10 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && i
 									") 
 	or die(mysqli_error($conn));
 	
+*/
 } else {
 	echo "Preencha todos os campos!";
 	
 } 
 
-header('Location:index.php');
+#header('Location:index.php');
