@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+
+?>
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -89,8 +94,6 @@
       <div class="container marketing">
         <?php
 
-        session_start();
-
         if (isset($_SESSION['aviso'])){
           echo $_SESSION['aviso'];
           unset($_SESSION['aviso']);
@@ -102,20 +105,37 @@
         
         <!-- Três colunas de texto, abaixo do carousel -->
         <div class="row">
-          <div class="col-md-6" >
+          <div class="col-md-4" >
             <img class="img-fluid" src="img/Calculadora.png">
           </div>
-          <div class="col-md-6">
-            <!--[if lte IE 8]>
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-            <![endif]-->
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-              hbspt.forms.create({
-              portalId: "4445510",
-              formId: "99c7d238-3da6-4e17-bd81-cd67792c8d87"
-            });
-            </script>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label>Nome</label>
+              <input name="name" required type="text" class="form-control" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+              <label>Email Profissional</label>
+              <input name="email" required type="email" class="form-control" placeholder="nome@exemplo.com">
+            </div>     
+            <div class="form-group">
+              <label>Número de Telefone Celular</label>
+              <input name="tel" required type="text" class="form-control" placeholder="Digite seu telefone">
+            </div>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="form-group">
+              <label>Nome da Empresa</label>
+              <input name="name_company" required type="text" class="form-control" placeholder="Digite o nome da empresa">
+            </div>
+            <div class="form-group">
+              <label>Valor Gasto na Destinação do Resíduo</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">R$</div>
+                </div>
+                <input name="destination" required type="number" class="form-control" placeholder="Digite o gasto na destinação do resíduo">
+              </div>              
+            </div>      
           </div>    
           
           <div class="col-md-12" style="margin-top: 50px;">
