@@ -10,6 +10,12 @@ session_start();
 
 include_once('connect/connect.php');
 
+if (!isset($_SESSION['id'])){
+
+	$_SESSION['aviso'] = "<div class='alert alert-danger' role='alert'>    Preencha o formulário para iniciar o cálculo do valor potencial presente no seu resíduo!  </div>";
+
+  header("Location: index.php");
+}
 //Tratando dados do formulário
 
 #if (isset($_POST['category']) && isset($_POST['subcategory']) && isset($_POST['amount'])){
@@ -18,9 +24,17 @@ if (isset($_POST['dest']) && isset($_POST['subcategory']) && isset($_POST['amoun
 
 	
 	#$category 		= mysqli_escape_string($conn, $_POST['category']);
-	$dest 	= mysqli_escape_string($conn, $_POST['dest']);
+	$dest 			= mysqli_escape_string($conn, $_POST['dest']);
 	$subcategory 	= mysqli_escape_string($conn, $_POST['subcategory']);
 	$amount 		= mysqli_escape_string($conn, $_POST['amount']);
+	$user_id 		= mysqli_escape_string($conn, $_SESSION['id']);
+
+	$cadastra_usuario = mysqli_query($conn, "
+								INSERT INTO calculation (amount, destination_value, user_id, sub_category_id,created_at)
+								VALUES 
+									('$amount','$dest','$user_id','$subcategory',NOW())
+									") 
+		or die(mysqli_error($conn));
 
 	$query = mysqli_query($conn, "SELECT name, price FROM sub_category WHERE id = ".$subcategory."") or die(mysqli_error($conn));
     $resultado = mysqli_fetch_assoc($query);
