@@ -109,7 +109,7 @@ session_start();
             <img class="img-fluid" src="img/Calculadora.png">
           </div>
           <br>
-          <div style="margin-top: 80px;" class="col-md-4">
+          <div style="margin-top: 83px;" class="col-md-4">
             <div class="form-group">
               <label>Nome</label>
               <input name="name" required type="text" class="form-control" placeholder="Digite seu nome">
@@ -120,7 +120,7 @@ session_start();
             </div>     
             
           </div><!-- /.col-lg-4 -->
-          <div style="margin-top: 80px;" class="col-lg-4">
+          <div style="margin-top: 83px;" class="col-lg-4">
             <div class="form-group">
               <label>Número de Telefone Celular</label>
               <input name="tel" required type="text" class="form-control" placeholder="Digite seu telefone">
