@@ -3,10 +3,7 @@
 include_once('connect/connect.php');
 
 session_start();
-if (isset($_SESSION['preencher'])){
-  if ($_SESSION['preencher'] == 1){
-
-
+if (isset($_SESSION['id'])){
 
 ?>
 
@@ -177,10 +174,7 @@ Privacidade</a> &middot; <a target="_black" href="https://brpolenmarketplace.s3.
 </html>
 
 <?php 
-
- unset($_SESSION['preencher']);
-
-  } 
+   
 }
 else {
     $_SESSION['aviso'] = "<div class='alert alert-danger' role='alert'>    Preencha o formulário para iniciar o cálculo do valor potencial presente no seu resíduo!  </div>";

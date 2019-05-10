@@ -6,7 +6,7 @@ include_once('connect/connect.php');
 
 //Tratando dados do formulário
 
-if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && isset($_POST['name_company']) && isset($_POST['destination'])){
+if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && isset($_POST['name_company'])){
 
 	$name 			= mysqli_escape_string($conn, $_POST['name']);
 	$email 			= mysqli_escape_string($conn, strtolower ($_POST['email']));
@@ -40,7 +40,6 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && i
 
 		$resultado_verificar_usuario = mysqli_fetch_assoc($verificar_usuario);
 		$_SESSION['id'] = $resultado_verificar_usuario['id'];
-	
 
 	}else{
 		echo "não cadastrado";
@@ -72,9 +71,9 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && i
 	or die(mysqli_error($conn));
 	
 */
+	header('Location:calcular.php');
 } else {
 	echo "Preencha todos os campos!";
 	
+	header('Location:index.php');
 } 
-
-#header('Location:index.php');
