@@ -101,10 +101,10 @@ session_start();
         }
         ?>
 
-        <form name="Form Contato (Calculadora)" method="POST" action="cad_calc.php" autocomplete="false">          
+        <form style="padding: 5px;" name="Form Contato (Calculadora)" method="POST" action="cad_calc.php" autocomplete="off">          
         
         <!-- Três colunas de texto, abaixo do carousel -->
-        <div class="row">
+        <div class="row" >
           <div class="col-md-4" >
             <img class="img-fluid" src="img/Calculadora.png">
           </div>
