@@ -96,7 +96,7 @@ if (isset($_SESSION['id'])){
           <img class="img-fluid" src="img/Calculadora.png">
         </div>
         <div class="col-lg-6">
-          <form method="POST" action="relatorio.php" autocomplete="false">
+          <form name="Form Contato (Calculadora)" method="POST" action="relatorio.php" autocomplete="false">
             <div class="form-group">
               <!--
               <label>Categoria do Resíduo</label>

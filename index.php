@@ -101,7 +101,7 @@ session_start();
         }
         ?>
 
-        <form method="POST" action="cad_calc.php" autocomplete="false">          
+        <form name="Form Contato (Calculadora)" method="POST" action="cad_calc.php" autocomplete="false">          
         
         <!-- Três colunas de texto, abaixo do carousel -->
         <div class="row">
