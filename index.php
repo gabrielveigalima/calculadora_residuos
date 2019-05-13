@@ -132,7 +132,7 @@ session_start();
           </div>    
           <div class="col-lg-4"></div>
           <div class="col-lg-8">
-            <input type="submit" value="Calcular" class="form-control btn btn_navbar">
+            <input type="submit" value="Enviar" class="form-control btn btn_navbar">
           </div>
         </div>
       </form>
