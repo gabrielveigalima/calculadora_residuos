@@ -117,7 +117,15 @@ session_start();
             <div class="form-group">
               <label>Email Profissional</label>
               <input name="email" required type="email" class="form-control" placeholder="nome@exemplo.com">
-            </div>     
+            </div>
+              <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" value="Comprar Resíduos" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">Comprar Resíduos</label>
+              </div>
+              <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio2" value="Vender Resíduos" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label"  for="customRadio2">Vender Resíduos</label>
+              </div>
             
           </div><!-- /.col-lg-4 -->
           <div style="margin-top: 83px;" class="col-lg-4">
@@ -128,8 +136,20 @@ session_start();
             <div class="form-group">
               <label>Nome da Empresa</label>
               <input name="name_company" required type="text" class="form-control" placeholder="Digite o nome da empresa">
-            </div> 
-          </div>    
+            </div>
+              <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio3" value="Comprar & Vender Resíduos" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio3">Comprar & Vender Resíduos</label>
+              </div>
+              <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio4" value="Informações Sobre o Segmento" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio4">Informações Sobre o Segmento</label>
+              </div>
+              <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio5" value="Receber Serviços de Consultoria" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio5">Receber Serviços de Consultoria</label>
+              </div>
+          </div>
           <div class="col-lg-4"></div>
           <div class="col-lg-8">
             <input type="submit" value="Enviar" class="form-control btn btn_navbar">
